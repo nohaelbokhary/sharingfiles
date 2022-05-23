@@ -35,4 +35,4 @@ jobs:
 workflows:
   say-hello-workflow:
     jobs:
-      -  save-hello-output
+      - save-hello-output
