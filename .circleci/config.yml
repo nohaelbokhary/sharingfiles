@@ -17,10 +17,10 @@ jobs:
     steps:
       - checkout
       - persist_to_workspace:
-          root: /tmp/workspace     # relative path to our working directory
+          root: /temp/workspace     # relative path to our working directory
           paths: output.txt     # file     
       - run:
-          root: /tmp/workspace
+          root: /temp/workspace
           name: "svae hello output"
           command: "echo "text to output here" > output.txt"
       - attach_workspace:
